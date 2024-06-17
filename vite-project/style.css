@@ -1,0 +1,269 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    background-color: #191919;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.section{
+  margin-bottom: 52px;
+}
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.hero-container{
+  margin-bottom: 32px;
+}
+
+.hero-text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.first{
+  width: 222px;
+  margin-bottom: 16px;
+}
+
+.second{
+  width: 93px;
+  margin-bottom: 32px;
+}
+
+.hero-title{
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  margin-bottom: 32px;
+}
+
+.hero-btn{
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  width: 280px;
+  background-color: #df3d3a;
+  padding: 19px 113px;
+}
+
+.hero-img{
+  display: block;
+  margin-top: 32px;
+}
+
+/* .design-section {
+}
+.section {
+} */
+/* .design-container {
+}
+.container {
+} */
+.design-list {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.design-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.20;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  margin-bottom: 32px;
+  width: 210px;
+}
+
+.design-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #e7e7e7;
+  margin-bottom: 16px;
+}
+
+.design-text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.comfort-img {
+  display: block;
+
+}
+
+.ability-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.20;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  margin-bottom: 32px;
+}
+
+.ability-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ability-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sound-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.20;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  margin-bottom: 32px;
+}
+
+.sound-img {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.sound-list {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+/* 
+.sound-item {
+
+} */
+
+.sound-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #e7e7e7;
+  margin-bottom: 16px;
+}
+
+.sound-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.technology-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  margin-bottom: 32px;
+}
+
+.technology-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  color: #e7e7e7;
+  margin-bottom: 16px;
+}
+
+.technology-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 125%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 32px;
+}
+
+.technology-img {
+  display: block;
+}
+
+.guarantee-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.20;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  margin-bottom: 32px;
+}
+
+.guarantee-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* .guarantee-item {
+
+} */
+
+.guarantee-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #e7e7e7;
+  margin-bottom: 16px;
+}
+
+.guarantee-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.guarantee-img {
+  display: block;
+  margin-top: 32px;
+}
