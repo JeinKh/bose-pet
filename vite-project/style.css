@@ -267,3 +267,120 @@ img{
   display: block;
   margin-top: 32px;
 }
+
+.history-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.20;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  width: 130px;
+  margin-bottom: 32px;
+}
+
+.history-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 32px;
+}
+
+.history-img {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.history-img-second {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.history-coment {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #e7e7e7;
+  margin-bottom: 16px;
+}
+
+.hisrory-author {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.reviews-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.20;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  margin-bottom: 32px;
+}
+
+.reviews-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #df3d3a;
+  margin-bottom: 16px;
+}
+
+.reviews-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 32px;
+}
+
+.reviews-number-list {
+  display: flex;
+  gap: 20px;
+}
+
+.reviews-number-item {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #df3d3a;
+}
+
+.faq-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.20;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #e7e7e7;
+  margin-bottom: 32px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.faq-item {
+  display: flex;
+  gap: 20px;
+}
+
+.faq-num-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 0.70;
+  color: #e7e7e7;
+}
+
+.faq-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.8);
+}
