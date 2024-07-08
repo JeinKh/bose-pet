@@ -87,7 +87,48 @@ img{
   padding-left: 20px;
   padding-right: 20px;
   z-index: 2;
+  transform: translate(100%);
 }
+
+.mob-menu.is-open{
+  transform: translate(0%);
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  to {
+    margin-left: 0%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.is-close {
+  animation-duration: 1s;
+  animation-name: slideout;
+}
+
+@keyframes slideout {
+  from {
+    margin-left: 0%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  to {
+    margin-left: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 
 .mob-container{
   display: flex;
@@ -456,6 +497,11 @@ img{
   color: #df3d3a;
 }
 
+/* .accordion-container{
+  background-color: #191919;
+  color: #e7e7e7;
+} */
+
 .faq-title {
   font-weight: 600;
   font-size: 24px;
@@ -466,41 +512,108 @@ img{
   margin-bottom: 32px;
 }
 
-.faq-list {
+/* .ac-trigger{
+  border: none;
+  border-bottom: 1px solid rgba(204, 204, 204, 1);
+} */
+
+/* .faq-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
+} */
 
-.faq-item {
-  display: flex;
-  gap: 20px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
-  padding-bottom: 24px;
-  align-items: center;
-}
+/* .faq-item {
+  background-color: #191919;
+} */
 
-.faq-num-text {
+/* .faq-num-text {
   font-weight: 400;
   font-size: 20px;
   line-height: 0.70;
   color: #e7e7e7;
-}
+} */
 
-.faq-text {
+/* .ac-header .ac-trigger {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.8);
 }
 
-.icon-faq{
-  fill: #E7E7E7;
-  padding: 9px 12px;
-  background-color:  rgba(255, 255, 255, 0.1);
-  border-radius: 100%;
-  flex-shrink: 0;
+.ac .ac-panel .ac-text{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #e7e7e7
 }
+
+.ac{
+  padding: 28px 24px;
+}
+
+.ac-trigger:focus {
+  outline: none;
+}
+
+
+.faq-item {
+  background-color: black;
+  color: #e7e7e7;
+}
+
+
+.ac-header .ac-trigger {
+  color: #e7e7e7;
+}
+
+
+.ac-panel .ac-text {
+  color: #e7e7e7;
+} */
+
+.faq-item.ac {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 0.70;
+  background-color: #191919;
+  color: #e7e7e7;
+  border: none;
+  border-bottom: 1px solid rgba(204, 204, 204, 1);
+}
+
+.faq-item.ac .ac-header .ac-trigger {
+  background-color: #191919;
+  color: #e7e7e7;
+  cursor: pointer;
+}
+
+.faq-item.ac .ac-panel {
+  background-color: #191919;
+  color: #e7e7e7;
+}
+
+.faq-item.ac .ac-panel .ac-text {
+  color: #e7e7e7;
+}
+
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .order-title {
   font-weight: 600;
@@ -510,43 +623,6 @@ img{
   text-transform: uppercase;
   color: #e7e7e7;
   margin-bottom: 32px;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-/* .swiper-wrapper {
-  display: flex;
-} */
-
-/* .swiper-slide {
-  display: flex;
-  flex-direction: column;
-  border-radius: 16px;
-  padding: 32px;
-  width: 320px;
-  min-height: 440px;
-  box-sizing: border-box;
-  background: #E4E5E6;
-  margin-bottom: 24px;
-} */
-
-.btn-container {
-  display: flex;
-  gap: 24px;
-  margin-top: 32px;
-}
-
-.button-next,
-.button-prev {
-  width: 44px;
-  height: 44px;
-  border-radius: 100%;
-  border: 2px solid #ffff;
 }
 
 
@@ -986,10 +1062,6 @@ margin-bottom: 26px;
     font-size: 30px;
   }
 
-  /* .swiper-slide{
-    
-  } */
-
   .order-list{
   margin-bottom: 52px;
   }
@@ -1100,10 +1172,6 @@ margin-bottom: 26px;
     font-size: 74px;
     width: 530px;
   }
-
-  /* .hero-img{
-    flex-shrink: 1;
-  } */
 
   .hero-btn{
     font-size: 20px;
@@ -1259,6 +1327,7 @@ margin-bottom: 26px;
     font-size: 28px;
   }
 
+
   .order-container{
     position: relative;
   }
@@ -1268,19 +1337,18 @@ margin-bottom: 26px;
     margin-bottom: 50px;
   }
 
-  /* .order-wrapper{
-    display: flex;
-    gap: 150px;
-    align-items: center;
-  } */
-
-  .swiper-container{
-    position: absolute;
-    top: 0;
-    left: 600px;
+  .swiper{
     width: 700px;
-    height: 680px;
-    /* order: 1; */
+    height: 664px;
+  }
+
+
+
+  .order-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    margin-bottom: 100px;
   }
 
   .order-list{

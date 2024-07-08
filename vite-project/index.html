@@ -27,14 +27,14 @@
             <li class="head-nav-item"><a href="#order" class="head-nav-link">Payment and delivery</a></li>
           </ul>
 
-          <button type="button" class="open-mob-menu">
+          <button type="button" class="open-mob-menu js-open-menu" aria-label="Open menu">
             <svg class="icon-hamburger" width="22" height="12">
               <use href="./img/icons.svg#icon-hamburger"></use>
             </svg>
           </button>
         </nav>
     </div>
-    <div class="mob-menu">
+    <div class="mob-menu js-menu-container" id="modal-menu">
       <div class="mob-container">
         <a href="/">
           <svg class="icon-logo" width="100" height="12">
@@ -42,7 +42,7 @@
           </svg>
         </a>
   
-          <button type="button" class="close-menu-btn">
+          <button type="button" class="close-menu-btn js-close-menu" aria-label="Close menu">
             <svg class="icon-close" width="24" height="24">
               <use href="./img/icons.svg#icon-close"></use>
             </svg>
@@ -51,10 +51,10 @@
 
         <nav class="mob-nav">
           <ul class="mob-nav-list">
-            <li class="mob-nav-item"><a href="#characteristics" class="mob-nav-link">Characteristics</a></li>
-            <li class="mob-nav-item"><a href="#history" class="mob-nav-link">History</a></li>
-            <li class="mob-nav-item"><a href="#reviews" class="mob-nav-link">Reviews</a></li>
-            <li class="mob-nav-item"><a href="#order" class="mob-nav-link">Payment and delivery</a></li>
+            <li class="mob-nav-item"><a href="#characteristics" class="mob-nav-link header-mob-menu-link">Characteristics</a></li>
+            <li class="mob-nav-item"><a href="#history" class="mob-nav-link header-mob-menu-link">History</a></li>
+            <li class="mob-nav-item"><a href="#reviews" class="mob-nav-link header-mob-menu-link">Reviews</a></li>
+            <li class="mob-nav-item"><a href="#order" class="mob-nav-link header-mob-menu-link">Payment and delivery</a></li>
           </ul>
         </nav>
     </div>
@@ -349,71 +349,70 @@
       </div>
     </section>
 
-    <section class="reviews-section section" id="reviews">
-      <div class="reviews-container container">
-          <h2 class="reviews-title">reviews</h2>
-          <img src="" alt="">
-          <button></button>
-          <h3 class="reviews-subtitle">Bose Сorporation</h3>
-          <p class="reviews-text">
-            Critically acclaimed for their powerful noise cancelling, 
-            astonishing sound, and unrivaled voice pickup, Bose Noise Cancelling
-            Headphones 700 help turn any space into the perfect place to listen to
-            music, get work done, or just shut out the world for a few moments and 
-            relax 
-          </p>
-          <ul class="reviews-number-list">
-            <li class="reviews-number-item">01</li>
-            <li class="reviews-number-item">-</li>
-            <li class="reviews-number-item">02</li>
-            <li class="reviews-number-item">-</li>
-            <li class="reviews-number-item">03</li>
-            <li class="reviews-number-item">-</li>
-            <li class="reviews-number-item">04</li>
-          </ul>
-      </div>
-    </section>
-
     <section class="faq-section section" id="faq">
       <div class="faq-container container">
         <h2 class="faq-title">faq</h2>
-        <ul class="faq-list">
-          <li class="faq-item">
-            <p class="faq-num-text">01</p>
-            <p class="faq-text">
-              How to pair with a mobile device?
-            </p>
-            <svg class="icon-faq" width="32" height="32">
-              <use href="./img/icons.svg#icon-faq"></use>
-            </svg>
+        <ul class="faq-list accordion-container">
+          <li class="faq-item ac" id="first-element">
+            <div class="ac-header">
+              <button type="button" class="ac-trigger">
+                How to pair with a mobile device?
+              </button>
+            </div>
+            <div class="ac-panel">
+              <p class="ac-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Adipisci, nisi odio nobis vero magni itaque aperiam sunt,
+                asperiores natus at, nam qui. Quibusdam explicabo maiores exercitationem vel. 
+                Aspernatur, suscipit debitis.
+              </p>
+            </div>
           </li>
-          <li class="faq-item">
-            <p class="faq-num-text">02</p>
-            <p class="faq-text">
-              What is the wireless range 
-              of the Bose NC 700?
-            </p>
-            <svg class="icon-faq" width="32" height="32">
-              <use href="./img/icons.svg#icon-faq"></use>
-            </svg>
+          <li class="faq-item ac">
+            <div class="ac-header">
+              <button type="button" class="faq-text ac-trigger">
+                What is the wireless range 
+                of the Bose NC 700?
+              </button>
+            </div>
+            <div class="ac-panel text-content">
+              <p class="ac-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Adipisci, nisi odio nobis vero magni itaque aperiam sunt,
+                asperiores natus at, nam qui. Quibusdam explicabo maiores exercitationem vel. 
+                Aspernatur, suscipit debitis.
+              </p>
+            </div>
           </li>
-          <li class="faq-item">
-            <p class="faq-num-text">03</p>
-            <p class="faq-text">
-              How do I fold the Bose NC 700 headphones for storage?
-            </p>
-            <svg class="icon-faq" width="32" height="32">
-              <use href="./img/icons.svg#icon-faq"></use>
-            </svg>
+          <li class="faq-item ac">
+            <div class="ac-header">
+              <button type="button" class="faq-text ac-trigger">
+                How do I fold the Bose NC 700 headphones for storage?
+              </button>
+            </div>
+            <div class="ac-panel text-content">
+              <p class="ac-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Adipisci, nisi odio nobis vero magni itaque aperiam sunt,
+                asperiores natus at, nam qui. Quibusdam explicabo maiores exercitationem vel. 
+                Aspernatur, suscipit debitis.
+              </p>
+            </div>
           </li>
-          <li class="faq-item">
-            <p class="faq-num-text">04</p>
-            <p class="faq-text">
-              Does the guarantee work internationally?
-            </p>
-            <svg class="icon-faq" width="32" height="32">
-              <use href="./img/icons.svg#icon-faq"></use>
-            </svg>
+          <li class="faq-item ac">
+            <div class="ac-header">
+              <button type="button" class="faq-text ac-trigger">
+                Does the guarantee work internationally?
+              </button>
+            </div>
+            <div class="ac-panel text-content">
+              <p class="ac-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Adipisci, nisi odio nobis vero magni itaque aperiam sunt,
+                asperiores natus at, nam qui. Quibusdam explicabo maiores exercitationem vel. 
+                Aspernatur, suscipit debitis.
+              </p>
+            </div>
           </li>
         </ul>
       </div>
@@ -422,62 +421,64 @@
     <section class="order-section section" id="order">
     <div class="order-container container">
       <h2 class="order-title">bose nc 700</h2>
-        <div class="swiper-container">
-          <ul class="swiper-wrapper">
-            <li class="swiper-slide">
-              <picture>
-                <source media="(min-width: 1440px)" 
-                srcset="./img/headphone-dark-desk-1x.jpg 1x, ./img/headphone-dark-desk-2x.jpg 2x">
-                <source media="(min-width: 768px)" 
-                srcset="./img/headphone-dark-tab-1x.jpg 1x, ./img/headphone-dark-tab-2x.jpg 2x">
-                <source media="(max-width: 767px)" 
-                srcset="./img/headphone-dark-mob-1x.jpg 1x, ./img/headphone-dark-mob-2x.jpg 2x">
-                <img src="./img/headphone-dark-mob-1x.jpg" alt="dark headphone">
-            </picture>
-              <!-- <img src="./img/headphone-dark-mob-1x.jpg" alt="dark headphone"> -->
-            </li>
-            <li class="swiper-slide">
-              <picture>
-                <source media="(min-width: 1440px)" 
-                srcset="./img/headphone-light-desk-1x.jpg 1x, ./img/headphone-light-desk-2x.jpg 2x">
-                <source media="(min-width: 768px)" 
-                srcset="./img/headphone-light-tab-1x.jpg 1x, ./img/headphone-light-tab-2x.jpg 2x">
-                <source media="(max-width: 767px)" 
-                srcset="./img/headphone-light-mob-1x.jpg 1x, ./img/headphone-light-mob-2x.jpg 2x">
-                <img src="./img/headphone-light-mob-1x.jpg " alt="light headphone">
-            </picture>
-              <!-- <img src="./img/headphone-light-mob-1x.jpg " alt="light headphone"> -->
-            </li>
-          </ul>
-          <div class="btn-container">
-            <div class="button-prev"></div>
-            <div class="button-next"></div>
+<!-- Slider main container -->
+        <div class="order-wrapper">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(min-width: 1440px)" 
+                  srcset="./img/headphone-dark-desk-1x.jpg 1x, ./img/headphone-dark-desk-2x.jpg 2x">
+                  <source media="(min-width: 768px)" 
+                  srcset="./img/headphone-dark-tab-1x.jpg 1x, ./img/headphone-dark-tab-2x.jpg 2x">
+                  <source media="(max-width: 767px)" 
+                  srcset="./img/headphone-dark-mob-1x.jpg 1x, ./img/headphone-dark-mob-2x.jpg 2x">
+                  <img src="./img/headphone-dark-mob-1x.jpg" alt="dark headphone">
+              </picture>
+              </div>
+              <div class="swiper-slide">
+                <picture>
+                  <source media="(min-width: 1440px)" 
+                  srcset="./img/headphone-light-desk-1x.jpg 1x, ./img/headphone-light-desk-2x.jpg 2x">
+                  <source media="(min-width: 768px)" 
+                  srcset="./img/headphone-light-tab-1x.jpg 1x, ./img/headphone-light-tab-2x.jpg 2x">
+                  <source media="(max-width: 767px)" 
+                  srcset="./img/headphone-light-mob-1x.jpg 1x, ./img/headphone-light-mob-2x.jpg 2x">
+                  <img src="./img/headphone-light-mob-1x.jpg " alt="light headphone">
+              </picture>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
-        </div>
-        <div>
-          <ul class="order-list">
-            <li class="order-item">
-                Availability in stores
-              <svg class="icon-arrow" width="20" height="20">
-                <use href="./img/icons.svg#icon-arrow"></use>
-              </svg>
-            </li>
-            <li class="order-item">
-                Characteristics
-              <svg class="icon-arrow" width="20" height="20">
-                <use href="./img/icons.svg#icon-arrow"></use>
-              </svg>
-            </li>
-            <li class="order-item">
-                Payment and delivery methods
-              <svg class="icon-arrow" width="20" height="20">
-                <use href="./img/icons.svg#icon-arrow"></use>
-              </svg>
-            </li>
-          </ul>
-          <p class="order-price">14 999 UAH</p>
-          <a href="/" class="order-btn">Order</a>
-        </div>
+          <div class="order-wrap-list">
+            <ul class="order-list">
+              <li class="order-item">
+                  Availability in stores
+                <svg class="icon-arrow" width="20" height="20">
+                  <use href="./img/icons.svg#icon-arrow"></use>
+                </svg>
+              </li>
+              <li class="order-item">
+                  Characteristics
+                <svg class="icon-arrow" width="20" height="20">
+                  <use href="./img/icons.svg#icon-arrow"></use>
+                </svg>
+              </li>
+              <li class="order-item">
+                  Payment and delivery methods
+                <svg class="icon-arrow" width="20" height="20">
+                  <use href="./img/icons.svg#icon-arrow"></use>
+                </svg>
+              </li>
+            </ul>
+            <p class="order-price">14 999 UAH</p>
+            <a href="/" class="order-btn">Order</a>
+          </div>
+        </div>                                                
       <picture>
         <source media="(min-width: 1440px)" 
         srcset="./img/order-desk-1x.png 1x, ./img/order-desk-2x.png 2x">
@@ -491,7 +492,7 @@
     </div>
     </section>
 
-    <section class="feedback-section">
+    <section class="feedback-section" id="reviews">
       <div class="feedback-container container">
         <div>
           <h2 class="feedback-title">Feedback</h2>
